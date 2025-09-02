@@ -1,0 +1,62 @@
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .our-coverage .content .content-card {
+        margin: 20px;
+        padding: 0 20px;
+    }
+
+    .home-hero .content .btns {
+        margin-top: 140px;
+    }
+
+    .page-hero {
+        height: 620px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main-header .desktop-nav .logo img,
+    .main-footer .footer-logo {
+        width: 110px;
+    }
+
+    .our-coverage .content .content-card {
+        margin: 20px;
+        padding: 0 20px;
+    }
+
+    .home-hero .content .btns {
+        margin-top: 120px;
+    }
+
+    .page-hero {
+        height: 580px;
+    }
+
+    .our-services .service-card::after {
+        width: 64px;
+        left: -32px;
+    }
+
+    .our-services .left-line img, 
+    .our-services .right-line img {
+        width: 54%;
+    }
+
+    .our-services .service-card .img {
+        height: 100px;
+        width: 100px;
+        padding: 26px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+@media (min-width: 576x) and (max-width: 767.98px) {
+    
+}
+
+@media (max-width: 575.98px) {
+    
+}

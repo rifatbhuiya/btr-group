@@ -3,9 +3,519 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Home - BTR Group</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Slick css -->
+    <link rel="stylesheet" href="css/slick.css">
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive style sheet -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+    <!-- Header start -->
+    <header class="main-header">
+        <!-- Desktop -->
+        <nav class="desktop-nav d-none d-xl-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="BTR group logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="d-flex justify-content-between">
+                            <li>
+                                <a href="about.html">about</a>
+                            </li>
+                            <li class="dropdown-li">
+                                <a href="electrical_services.html" class="d-inline-flex gap-2 align-items-center">
+                                    <span>electrical</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-item">
+                                    <li>
+                                        <a href="#">Item one</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item two</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item there</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-li">
+                                <a href="javascript:void(0);" class="d-inline-flex gap-2 align-items-center">
+                                    <span>FIRE & SECURITY</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-item">
+                                    <li>
+                                        <a href="#">Item one</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item two</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item there</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-li">
+                                <a href="news.html" class="d-inline-flex gap-2 align-items-center">
+                                    <span>news</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-item">
+                                    <li>
+                                        <a href="#">Item one</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item two</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Item there</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 text-end">
+                        <ul>
+                            <li>
+                                <a href="contact.html" class="action">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile -->
+        <nav class="mobile-nav d-block d-xl-none">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="BTR group logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-end">
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#btrGroup" aria-controls="btnGroup">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="btrGroup" aria-labelledby="btnGroupLabel">
+                            <div class="offcanvas-header align-items-center">
+                                <img class="logo" src="images/logo.png" alt="btr group logo">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul>
+                                    <li><a href="about.html">about</a></li>
+                                    <li class="dropdown-li">
+                                        <div class="d-flex justify-content-between">
+                                            <a href="electrical_services.html" class="dropdown-name">electrical</a>
+                                            <i class="fa-solid fa-angle-down arrow"></i>
+                                        </div>
+                                        <ul class="dropdown-items">
+                                            <li><a href="#">item one</a></li>
+                                            <li><a href="#">item two</a></li>
+                                            <li><a href="#">item there</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-li">
+                                        <div class="d-flex justify-content-between">
+                                            <a href="javascript:void(0);" class="dropdown-name">fire & security</a>
+                                            <i class="fa-solid fa-angle-down arrow"></i>
+                                        </div>
+                                        <ul class="dropdown-items">
+                                            <li><a href="#">item one</a></li>
+                                            <li><a href="#">item two</a></li>
+                                            <li><a href="#">item there</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-li">
+                                        <div class="d-flex justify-content-between">
+                                            <a href="news.html" class="dropdown-name">news</a>
+                                            <i class="fa-solid fa-angle-down arrow"></i>
+                                        </div>
+                                        <ul class="dropdown-items">
+                                            <li><a href="#">item one</a></li>
+                                            <li><a href="#">item two</a></li>
+                                            <li><a href="#">item there</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main>
+        <!-- Home hero start -->
+        <section class="home-hero">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="content text-center">
+                            <h1>Sed ut perspiciatis unde omnis iste natus error sit volu</h1>
+                            <h5>
+                                Sed ut perspiciatis unde omnis iste natus error sit volu
+                            </p>
+                            <ul class="d-flex gap-4 align-items-center justify-content-center btns">
+                                <li>
+                                    <a href="#">electrical</a>
+                                </li>
+                                <li>
+                                    <a href="#">fire & security</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home hero end -->
+
+        <!-- Our coverage start -->
+        <section class="our-coverage">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-11">
+                        <div class="content">
+                            <div class="d-flex flex-wrap flex-xl-nowrap">
+                                <div class="content-card">
+                                    <h3>Experienced Team</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, asorem ipsum dolor sit amet
+                                    </p>
+                                </div>
+                                <div class="content-card">
+                                    <h3>Digital Solutions</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, asorem ipsum dolor sit amet
+                                    </p>
+                                </div>
+                                <div class="content-card">
+                                    <h3>Nationwide coverage</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, asorem ipsum dolor sit amet
+                                    </p>
+                                </div>
+                                <div class="content-card">
+                                    <h3>24/7 Support</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, asorem ipsum dolor sit amet
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our coverage end -->
+
+        <!-- Welcome text start -->
+        <section class="home-welcome">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-11">
+                        <div class="row px-0 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="left">
+                                    <h4>Passionate – Dedicated – Professional</h4>
+                                    <h2>Sed ut perspiciatis 
+                                        unde omnis iste nat
+                                        us error sit volu 
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right">
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit volu ptatem accusa ntium dolo remqutium, totam rem aperiam, eaque ipsa quae ab illo inventore verita tis et quasi architecto beatae vitae dicta sunt explicabo. 
+                                    </p>
+                                    <p>
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur ma dolores uptatem quia voluptas situr auptatem quia volunt. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Welcome text end -->
+
+        <!-- Our services start -->
+        <section class="our-services">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2 class="section-heading">Our Services</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-list position-relative">
+                <div class="left-line">
+                    <img src="images/home-services/line.png" alt="line">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8">
+                            <div class="row px-0">
+                                <div class="col-lg-4 service-card">
+                                    <div class="img">
+                                        <img src="images/home-services/1.png" alt="service icon">
+                                    </div>
+                                    <h3>electrical</h3>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit volu ptatem accusa ntium dolo remqutium
+                                    </p>
+                                    <a href="#" class="action">MORE ></a>
+                                </div>
+                                <div class="col-lg-4 service-card">
+                                    <div class="img">
+                                        <img src="images/home-services/2.png" alt="service icon">
+                                    </div>
+                                    <h3>fire</h3>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit volu ptatem accusa ntium dolo remqutium
+                                    </p>
+                                    <a href="#" class="action">MORE ></a>
+                                </div>
+                                <div class="col-lg-4 service-card">
+                                    <div class="img">
+                                        <img src="images/home-services/3.png" alt="service icon">
+                                    </div>
+                                    <h3>security</h3>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit volu ptatem accusa ntium dolo remqutium
+                                    </p>
+                                    <a href="#" class="action">MORE  ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-line text-end">
+                    <img src="images/home-services/line.png" alt="line">
+                </div>
+            </div>
+        </section>
+        <!-- Our services end -->
+
+        <!-- Why choose us start -->
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 position-relative">
+                        <img class="why-choose-bg w-100 img-fluid" src="images/home-why-choose-us-bg.png" alt="why choose us bg">
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="content">
+                            <h2>Why choose us...</h3>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle"></i>
+                                <div>
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle"></i>
+                                <div>
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-circle"></i>
+                                <div>
+                                    <h4>Lorem ipsum dolor sit amet</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why choose us end -->
+
+        <!-- Accreditations start -->
+        <section class="accreditations">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center">
+                        <h2>ACCREDITATIONS</h2>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="client-logo">
+                                <img src="images/certificates/1.png" alt="certificate image">
+                            </div>
+                            <div class="client-logo">
+                                <img src="images/certificates/2.png" alt="certificate image">
+                            </div>
+                            <div class="client-logo">
+                                <img src="images/certificates/3.png" alt="certificate image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 offset-xl-1">
+                        <img class="w-100 img-fluid" src="images/home-accredtations-bg.png" alt="Accreditations bg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Accreditations end -->
+
+        <!-- Contact us start -->
+        <section class="contact-us">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="content text-center">
+                            <h2>contact us</h2>
+                            <p>
+                                Just complete the enquiry form below and one of our team will get back to you. We look forward to hearing from you!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-9">
+                        <form method="POST">
+                            <div class="d-flex gap-3 text-center">
+                                <div class="left">
+                                    <div class="mb-2">
+                                        <input type="text" name="name" placeholder="name">
+                                    </div>
+                                    <div class="mb-2">
+                                        <input type="tel" name="telephone" placeholder="tel">
+                                    </div>
+                                    <input type="email" name="email" placeholder="email">
+                                </div>
+                                <div class="middle">
+                                    <textarea name="message" placeholder="message"></textarea>
+                                </div>
+                                <div class="right align-self-end">
+                                    <button type="submit">send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact us end -->
+    </main>
+    <!-- Main end -->
+
+    <!-- BTT Start -->
+    <div class="btt" title="back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- BTT End -->
+
+    <!-- Footer start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 offset-lg-2">
+                    <h4>our contacts</h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <address>The company address with google map location</address>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@btr-group.co.uk" class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>info@btr-group.co.uk</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mt-4">
+                        <li>
+                            <a href="tel:07720 757401" class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Electrical: Ben - 07720 757401</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:07511 626058" class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-fire-extinguisher"></i>
+                                <span>Fire & Security: Stu - 07511 626058</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <h4>useful links</h3>
+                    <ul>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="electrical_services.html">electrical</a></li>
+                        <li><a href="#">fire & security</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <img class="footer-logo" src="images/logo.png" alt="btr group logo">
+                    <p class="copyright">&copy; BTR GROUP 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- JQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
     
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Slick js -->
+    <script src="js/slick.min.js"></script>
+    
+    <!-- Main script sheet -->
+    <script src="js/script.js"></script>
 </body>
 </html>
