@@ -50,13 +50,394 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    
+    :root {
+        --h1: 30px;
+        --h2: 27px;
+        --h3: 25px;
+        --h4: 21px;
+        --h5: 19px;
+        --h6: 17px;
+        --lg: 17px;
+        --bs: 15px;
+        --sm: 14px;
+    }
+
+    .home-hero .content .btns li a {
+        --lg: 16px;
+
+        padding: 10px 0;
+        width: 200px;
+    }
+
+    .home-welcome h2,
+    .about-welcome .content h2,
+    .domestic-welcome .content h2 {
+        --h2: var(--h1);
+        margin-bottom: 16px;
+    }
+
+    .about-our-approach .content h2,
+    .domestic-content h2 {
+        --h2: var(--h1);
+        margin-top: 16px;
+    }
+
+    .our-coverage .content .content-card {
+        margin: 20px;
+        padding: 0 20px;
+    }
+
+    .home-hero .content .btns {
+        margin-top: 120px;
+    }
+
+    .page-hero h1 {
+        --h1: 32px;
+    }
+
+    .page-hero {
+        height: 500px;
+    }
+
+    .our-services .service-card::after {
+        width: 64px;
+        left: -32px;
+    }
+
+    .our-services .left-line img, 
+    .our-services .right-line img {
+        width: 25%;
+    }
+
+    .our-services .service-card .img {
+        height: 90px;
+        width: 90px;
+        padding: 26px;
+    }
+
+    .why-choose-bg {
+        position: static;
+        margin-bottom: 16px;
+    }
+
+    .accreditations,
+    .accreditationss {
+        padding: 60px 0;
+    }
+
+    .accreditationss h2 {
+        --h2: var(--h1);
+    }
+
+    .page-hero .icon img {
+        margin-top: 40px;
+        width: 120px;
+    }
+
+    .news-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 0;
+        border-right: 2px solid transparent;
+        margin-top: 20px;
+    }
+
+    .news-actions {
+        padding-left: 0;
+    }
+
+    .domestic-content {
+        padding: 40px 0 60px;
+    }
+
+    .main-footer .footer-logo {
+        width: 100px;
+    }
 }
 
-@media (min-width: 576x) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+    :root {
+        --h1: 28px;
+        --h2: 26px;
+        --h3: 24px;
+        --h4: 20px;
+        --h5: 18px;
+        --h6: 16px;
+        --lg: 16px;
+        --bs: 15px;
+        --sm: 14px;
+    }
+
+    .home-hero {
+        height: 540px;
+    }
+
+    .home-hero .content h1 {
+        --h1: 32px;
+    }
+
+    .home-hero .content .btns li a {
+        --lg: 16px;
+
+        padding: 10px 0;
+        width: 200px;
+    }
+
+    .home-welcome h2,
+    .about-welcome .content h2,
+    .domestic-welcome .content h2 {
+        --h2: var(--h1);
+        margin-bottom: 16px;
+    }
+
+    .about-our-approach .content h2,
+    .domestic-content h2 {
+        --h2: var(--h1);
+        margin-top: 16px;
+    }
+
+    .home-hero .content .btns {
+        margin-top: 50px;
+    }
+
+    .page-hero h1 {
+        --h1: 32px;
+    }
+
+    .page-hero {
+        height: 400px;
+    }
+
+    .home-welcome h4 {
+        margin-bottom: 40px;
+    }
+
+    .our-services .service-card .img {
+        height: 90px;
+        width: 90px;
+        padding: 26px;
+    }
+
+    .why-choose-bg {
+        position: static;
+        margin-bottom: 16px;
+    }
+
+    .accreditations,
+    .accreditationss {
+        padding: 60px 0;
+    }
+
+    .accreditationss h2 {
+        --h2: var(--h1);
+    }
+
+    .page-hero .icon img {
+        margin-top: 40px;
+        width: 100px;
+    }
+
+    .news-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 0;
+        border-right: 2px solid transparent;
+        margin-top: 20px;
+    }
+
+    .news-actions {
+        padding-left: 0;
+    }
+
+    .domestic-content {
+        padding: 40px 0 60px;
+    }
+
+    .domestic-content .action a {
+        --lg: var(--lg);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .our-coverage .content .content-card {
+        margin: 20px;
+        padding: 0 20px;
+        width: 100%;
+    }
     
+    .our-services .service-card::after {
+        background: transparent;
+    }
+
+    .our-services .left-line img, 
+    .our-services .right-line img {
+        display: none;
+    }
+
+    .our-services .service-card h3 {
+        margin-top: 16px;
+    }
+
+    .contact-us .left, 
+    .contact-us .middle,
+    .contact-us .right,
+    .contact-details .left,
+    .contact-details .right {
+        width: 100%;
+    }
+
+    .main-footer .footer-logo {
+        width: 100px;
+    }
+
+    .main-footer .copyright {
+        margin-top: 12px;
+    }
+
+    .contact-us textarea {
+        min-height: 160px;
+    }
+
+    .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+        --bs-offcanvas-width: 320px;
+    }
 }
 
 @media (max-width: 575.98px) {
-    
+    :root {
+        --h1: 27px;
+        --h2: 25px;
+        --h3: 23px;
+        --h4: 19px;
+        --h5: 17px;
+        --h6: 16px;
+        --lg: 16px;
+        --bs: 15px;
+        --sm: 14px;
+    }
+
+    .home-hero {
+        height: 500px;
+    }
+
+    .home-hero .content h1 {
+        --h1: 32px;
+    }
+
+    .home-hero .content .btns li a {
+        --lg: 16px;
+
+        padding: 10px 0;
+        width: 200px;
+    }
+
+    .home-welcome h2,
+    .about-welcome .content h2,
+    .domestic-welcome .content h2 {
+        --h2: var(--h1);
+        margin-bottom: 16px;
+    }
+
+    .about-our-approach .content h2,
+    .domestic-content h2 {
+        --h2: var(--h1);
+        margin-top: 16px;
+    }
+
+    .home-hero .content h5 {
+        margin-top: 16px;
+    }
+
+    .home-hero .content .btns {
+        margin-top: 12px;
+    }
+
+    .our-coverage .content {
+        transform: translateY(-80px);
+        -webkit-transform: translateY(-80px);
+        -moz-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
+        -o-transform: translateY(-80px);
+    }
+
+    .home-welcome h4 {
+        margin-bottom: 32px;
+    }
+
+    .home-welcome {
+        padding: 0 0 80px;
+    }
+
+    .page-hero h1 {
+        --h1: 32px;
+        margin-top: 40px;
+    }
+
+    .page-hero {
+        height: 320px;
+    }
+
+    .about-welcome .content.shadow,
+    .electrical-content .welcome,
+    .domestic-welcome .welcome {
+        transform: translateY(-60px);
+        -webkit-transform: translateY(-60px);
+        -moz-transform: translateY(-60px);
+        -ms-transform: translateY(-60px);
+        -o-transform: translateY(-60px);
+    }
+
+    .our-services .service-card .img {
+        height: 90px;
+        width: 90px;
+        padding: 26px;
+    }
+
+    .about-our-approach {
+        padding: 24px 0 80px;
+    }
+
+    .why-choose-bg {
+        position: static;
+        margin-bottom: 16px;
+    }
+
+    .domestic-welcome {
+        padding: 20px 0 40px;
+    }
+
+    .accreditations,
+    .accreditationss {
+        padding: 60px 0;
+    }
+
+    .accreditationss h2 {
+        --h2: var(--h1);
+    }
+
+    .page-hero .icon img {
+        margin-top: 20px;
+        width: 80px;
+    }
+
+    .news-card-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding-right: 0;
+        border-right: 2px solid transparent;
+        margin-top: 20px;
+    }
+
+    .news-actions {
+        padding-left: 0;
+    }
+
+    .domestic-content {
+        padding: 40px 0 60px;
+    }
+
+    .domestic-content .action a {
+        --lg: var(--lg);
+    }
+
+    .domestic-content .action {
+        margin-top: 40px;
+    }
 }

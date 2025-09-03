@@ -263,6 +263,7 @@ body {
     font-size: 15px;
 }
 
+.mobile-nav .offcanvas-body li a.active,
 .main-header .mobile-nav .offcanvas-body ul.dropdown-items li a:hover, 
 .main-header .mobile-nav .offcanvas-body ul.dropdown-items li a.active {
     color: var(--red_color);
