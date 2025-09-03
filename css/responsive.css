@@ -22,6 +22,7 @@
     .our-coverage .content .content-card {
         margin: 20px;
         padding: 0 20px;
+        width: 44%;
     }
 
     .home-hero .content .btns {
@@ -85,6 +86,7 @@
     .our-coverage .content .content-card {
         margin: 20px;
         padding: 0 20px;
+        width: 44%;
     }
 
     .home-hero .content .btns {
@@ -323,10 +325,10 @@
     }
 
     .home-hero .content .btns li a {
-        --lg: 16px;
+        --lg: 15px;
 
         padding: 10px 0;
-        width: 200px;
+        width: 160px;
     }
 
     .home-welcome h2,
