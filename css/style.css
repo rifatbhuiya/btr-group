@@ -776,8 +776,11 @@ body {
 /* BTT css end */
 
 .main-footer {
-    padding: 40px 0;
     background: url(../images/footer-bg.png) no-repeat center / cover;
+}
+
+.main-footer .row {
+    padding: 40px 0;
 }
 
 .main-footer h4 {
@@ -816,6 +819,21 @@ body {
 .main-footer .copyright {
     margin-top: 80px;
     color: var(--white_color);
+}
+
+.main-footer .container {
+    z-index: 1;
+}
+
+.main-footer .bolt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.main-footer .bolt img {
+    height: 100%;
 }
 /* Footer css end */
 
