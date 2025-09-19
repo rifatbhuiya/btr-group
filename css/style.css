@@ -173,6 +173,13 @@ body {
     -o-transition: var(--transition);
 }
 
+.main-header.fade-nav {
+    background-color: #0a0a0a;
+    -webkit-box-shadow: 0 0 170px 50px var(--black_color);
+    -moz-box-shadow: 0 0 170px 50px var(--black_color);
+    box-shadow: 0 0 170px 50px var(--black_color);
+}
+
 .sticky-header.main-header {
     position: sticky;
     transition: var(--transition);
@@ -184,9 +191,12 @@ body {
 }
 
 .main-header.fixed-header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     animation: sticky-anim .5s linear 1;
     -webkit-animation: sticky-anim .5s linear 1;
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
 }
 
 @keyframes sticky-anim {
@@ -265,6 +275,7 @@ body {
 
 .main-header .mobile-nav .offcanvas-body ul.dropdown-items li a {
     font-size: 14px;
+    text-wrap: wrap;
 }
 
 .mobile-nav .offcanvas-body li a.active,
@@ -398,10 +409,11 @@ body {
 
 .main-header .desktop-nav ul li * > li a {
     font-size: 15px;
+    text-wrap: wrap;
 }
 
 .main-header .desktop-nav ul li * > li {
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .main-header .desktop-nav ul li * > li:first-child {
@@ -411,7 +423,7 @@ body {
 
 .home-hero {
     background: url(../images/home-hero-bg.png) no-repeat center / cover;
-    height: 700px;
+    height: 800px;
 }
 
 .home-hero .content h1 {
@@ -428,7 +440,7 @@ body {
 }
 
 .home-hero .content .btns {
-    margin-top: 160px;
+    margin-top: 80px;
 }
 
 .home-hero .content .btns li a {

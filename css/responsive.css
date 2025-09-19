@@ -4,10 +4,6 @@
         padding: 0 20px;
     }
 
-    .home-hero .content .btns {
-        margin-top: 140px;
-    }
-
     .page-hero {
         height: 620px;
     }
@@ -441,5 +437,9 @@
 
     .domestic-content .action {
         margin-top: 40px;
+    }
+
+    .main-footer .bolt img {
+        width: 100%;
     }
 }
